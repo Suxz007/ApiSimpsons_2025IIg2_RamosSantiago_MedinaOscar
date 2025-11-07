@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+.characters-page {
+  min-height: calc(100vh - 200px)
+}
+
+.page-title {
+  margin: 0 0 12px
+}
+
+.search-feedback {
+  opacity: .8;
+  margin-bottom: 8px
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.character-card-wrapper {
+  height: 100%
+}
+
+@media (min-width:480px) {
+  .characters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  }
+}
+
+@media (min-width:768px) {
+  .characters-grid {
+    gap: 16px
+  }
+}
+
+.characters-count {
+  margin: 4px 0 10px;
+  opacity: .9
+}
+=======
+
+.characters-page{min-height:calc(100vh - 200px)}
+.page-title{margin:0 0 12px}
+.search-feedback{opacity:.8;margin-bottom:8px}
+.characters-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:12px;
+  align-items:stretch;
+}
+.character-card-wrapper{height:100%}
+@media (min-width:480px){.characters-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}
+@media (min-width:768px){.characters-grid{gap:16px}}
+
+.characters-count{margin:4px 0 10px;opacity:.9}
+>>>>>>> 928c9da (ApiSimpsons_2025IIg2_Ramos_Santiago_Medina_Oscar)

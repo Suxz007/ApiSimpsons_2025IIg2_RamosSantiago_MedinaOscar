@@ -1,0 +1,103 @@
+/* Reset básico y global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Contenedor general para paginas */
+#container-pages {
+  padding: 20px;
+  min-height: calc(100vh - 160px);
+}
+
+/* Estilos básicos para los headers */
+header {
+  background-color: #f9d532;
+  padding: 1rem;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navbar estilo simple */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 0.5rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+/* Loader */
+.loader {
+  display: block;
+  margin: 40px auto;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #ffcc00;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animacion Loader */
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/* Cards base */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Responsive para grid cards */
+@media (max-width: 768px) {
+  #container-pages {
+    padding: 15px;
+  }
+}

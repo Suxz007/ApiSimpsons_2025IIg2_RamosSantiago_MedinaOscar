@@ -1,0 +1,113 @@
+.character-card {
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #FFF3B0 0%, #FFE680 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+.character-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+}
+
+.character-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.character-card .card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.btn.btn-details {
+  margin-top: auto;
+  display: inline-block;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width:480px) {
+  .character-card img {
+    height: 180px;
+  }
+}
+
+.character-card {
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #FFF3B0 0%, #FFE680 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+.character-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+}
+
+.character-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.character-card .card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.btn.btn-details {
+  margin-top: auto;
+  display: inline-block;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width:480px) {
+  .character-card img {
+    height: 180px;
+  }
+}

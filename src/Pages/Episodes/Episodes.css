@@ -1,0 +1,40 @@
+.episodes-page {
+    min-height: calc(100vh - 200px);
+}
+
+.page-title {
+    margin: 0 0 12px;
+}
+
+.search-feedback {
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    align-items: stretch;
+}
+
+.episode-card {
+    height: 100%;
+}
+
+@media (min-width: 480px) {
+    .episodes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .episodes-grid {
+        gap: 16px;
+    }
+}
+
+.episodes-count {
+    margin: 4px 0 10px;
+    opacity: 0.9;
+}

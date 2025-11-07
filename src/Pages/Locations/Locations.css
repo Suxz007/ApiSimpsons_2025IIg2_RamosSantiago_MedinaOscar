@@ -1,0 +1,40 @@
+.locations-page {
+  min-height: calc(100vh - 200px);
+}
+
+.page-title {
+  margin: 0 0 12px;
+}
+
+.search-feedback {
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.location-card {
+  height: 100%;
+}
+
+@media (min-width: 480px) {
+  .locations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .locations-grid {
+    gap: 16px;
+  }
+}
+
+.locations-count {
+  margin: 4px 0 10px;
+  opacity: 0.9;
+}
